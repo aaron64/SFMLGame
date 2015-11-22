@@ -15,6 +15,7 @@ public:
     Image(std::string name);
 
     void draw(float x, float y, sf::RenderWindow& g);
+    void drawStatic(float x, float y, sf::RenderWindow& g);
     void setScale(int x, int y);
 private:
     sf::Sprite image;

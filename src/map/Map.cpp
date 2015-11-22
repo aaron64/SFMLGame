@@ -16,5 +16,5 @@ void Map::update() {
 }
 
 void Map::render(sf::RenderWindow &g) {
-    bg->draw(0,0,g);
+    bg->drawStatic(0,0,g);
 }

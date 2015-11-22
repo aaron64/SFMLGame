@@ -27,3 +27,8 @@ void Image::draw(float x, float y, sf::RenderWindow& g){
     image.setPosition(x,y);
     g.draw(image);
 }
+void Image::drawStatic(float x, float y, sf::RenderWindow &g) {
+    float xd = g.getView().getCenter().x - Screen::SCREEN_WIDTH/2;
+    float yd = g.getView().getCenter().y - Screen::SCREEN_HEIGHT/2;
+    draw(xd - x, yd - y, g);
+}

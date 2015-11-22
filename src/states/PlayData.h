@@ -9,11 +9,13 @@
 #include <vector>
 #include "../entities/Entity.h"
 #include "../map/Map.h"
+#include "../entities/Player.h"
 
 // This class provides data to the "Play" state, map, entities, time, etc
 class PlayData {
 public:
     PlayData();
+    Player* player;
     Map* map;
     std::vector<Entity*> entityList;
 };
