@@ -13,8 +13,8 @@ class Enemy : public Living {
 public:
     Enemy(float x, float y, std::string name);
 
-    void update();
-    void render(sf::RenderWindow& g);
+    void update(PlayData& pd);
+    void render(PlayData& pd, sf::RenderWindow& g);
 
 private:
     float mXd, mYd;

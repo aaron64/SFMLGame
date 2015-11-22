@@ -17,11 +17,21 @@ Image::Image(std::string name)
         loaded = true;
         image.setTexture(texture, false);
     }
+
+    // set origin at center
+    image.setOrigin(texture.getSize().x/2, texture.getSize().y/2);
 }
 
 void Image::setScale(int x, int y) {
     image.setScale(((float)x/texture.getSize().x),((float)y/texture.getSize().y));
 }
+
+
+int Image::getWidth() {return texture.getSize().x; }
+int Image::getHeight() {return texture.getSize().y; }
+
+sf::Sprite& Image::getSprite() {return image; }
+
 
 void Image::draw(float x, float y, sf::RenderWindow& g){
     image.setPosition(x,y);

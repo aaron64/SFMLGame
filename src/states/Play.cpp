@@ -36,24 +36,27 @@ void Play::update()
     // Updates each entity in entityList
     for(int i = 0; i < pd->entityList.size(); i++)
     {
-        pd->entityList[i]->update();
+        pd->entityList[i]->update(*pd);
     }
 }
 
 void Play::render(sf::RenderWindow& g)
 {
+    // Center view around player
     sf::View v;
     v.setSize(Screen::SCREEN_WIDTH,Screen::SCREEN_HEIGHT);
     v.setCenter(pd->player->getX(),pd->player->getY());
     g.setView(v);
-   // g.getView().setCenter(pd->player->getX(), pd->player->getY());
 
-
+    // Render map
     pd->map->render(g);
 
     // Renders each entity in entityList
     for(int i = 0; i < pd->entityList.size(); i++)
     {
-        pd->entityList[i]->render(g);
+        pd->entityList[i]->render(*pd, g);
     }
+
+    // Render cursor
+    pd->cursor->render(g);
 }

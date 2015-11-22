@@ -9,12 +9,13 @@
 #include <SFML/Graphics/RenderWindow.hpp>
 #include "../util/Image.h"
 
+class PlayData;
 class Entity {
 public:
     Entity(float x, float y, std::string name);
 
-    virtual void update() {}
-    virtual void render(sf::RenderWindow& g) {}
+    virtual void update(PlayData& pd) {}
+    virtual void render(PlayData& pd, sf::RenderWindow& g) {}
 
 
     void setName(std::string name);

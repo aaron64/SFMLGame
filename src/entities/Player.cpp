@@ -3,8 +3,10 @@
 //
 
 #include <iostream>
+#include <cmath>
 #include "Player.h"
 #include "../util/Keys.h"
+#include "../states/PlayData.h"
 
 using namespace std;
 
@@ -13,7 +15,7 @@ Player::Player(float x, float y, std::string name) : Living(x,y,name) {
 
 }
 
-void Player::update() {
+void Player::update(PlayData& pd) {
     if(Keys::W)
         move(0,-1 * getVelocity());
     if(Keys::S)
@@ -27,6 +29,8 @@ void Player::update() {
     else
         setVelocity(1);
 }
-void Player::render(sf::RenderWindow& g) {
+void Player::render(PlayData& pd, sf::RenderWindow& g) {
+    float r = atan2(getY() - pd.cursor->getY(), getX() - pd.cursor->getX());
+    image->getSprite().setRotation(r * 180);
     image->draw(getX(), getY(), g);
 }

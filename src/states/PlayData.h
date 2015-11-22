@@ -10,12 +10,14 @@
 #include "../entities/Entity.h"
 #include "../map/Map.h"
 #include "../entities/Player.h"
+#include "../util/Cursor.h"
 
 // This class provides data to the "Play" state, map, entities, time, etc
 class PlayData {
 public:
     PlayData();
     Player* player;
+    Cursor* cursor;
     Map* map;
     std::vector<Entity*> entityList;
 };

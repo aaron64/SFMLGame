@@ -16,5 +16,5 @@ void Map::update() {
 }
 
 void Map::render(sf::RenderWindow &g) {
-    bg->drawStatic(0,0,g);
+    bg->drawStatic(-Screen::SCREEN_WIDTH/2,-Screen::SCREEN_HEIGHT/2,g);
 }

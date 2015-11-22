@@ -4,5 +4,6 @@
 
 #include "PlayData.h"
 PlayData::PlayData() {
+    cursor = new Cursor("crosshair");
     map = new Map();
 }

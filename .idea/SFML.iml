@@ -23,6 +23,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/states/Play.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/states/PlayData.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/states/PlayData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Cursor.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Cursor.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Geom.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Geom.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Image.cpp" isTestSource="false" />

@@ -16,6 +16,12 @@ public:
 
     void draw(float x, float y, sf::RenderWindow& g);
     void drawStatic(float x, float y, sf::RenderWindow& g);
+
+    int getWidth();
+    int getHeight();
+
+    sf::Sprite& getSprite();
+
     void setScale(int x, int y);
 private:
     sf::Sprite image;

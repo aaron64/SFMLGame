@@ -13,8 +13,8 @@ class Player: public Living {
 public:
     Player(float x, float y, std::string name);
 
-    void update();
-    void render(sf::RenderWindow& g);
+    void update(PlayData& pd);
+    void render(PlayData& pd, sf::RenderWindow& g);
 };
 
 
