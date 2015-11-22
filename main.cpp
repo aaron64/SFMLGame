@@ -23,6 +23,7 @@ bool init()
 {
     window = new sf::RenderWindow(sf::VideoMode(Screen::SCREEN_WIDTH, Screen::SCREEN_HEIGHT), "Hello");
     window->setPosition(sf::Vector2i(400,200));
+    window->setMouseCursorVisible(false);
 
     //Initialization flag
     bool success = true;
