@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cmake_modules/FindSFML.cmake" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Enemy.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Enemy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Entity.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Entity.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Living.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Living.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Player.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/entities/Player.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/Map.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/Map.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/GameState.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/GameState.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/Menu.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/Menu.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/Play.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/Play.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/PlayData.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/states/PlayData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Geom.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Geom.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Image.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Image.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Keys.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Keys.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Screen.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Screen.h" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Header Search Paths">
+        <CLASSES>
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/Debug" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/MinSizeRel" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/RelWithDebInfo" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/Release" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/local/include" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/Debug" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/MinSizeRel" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/RelWithDebInfo" />
+          <root url="file://$USER_HOME$/.clion11/system/cmake/generated/131b6587/131b6587/Release" />
+          <root url="file:///usr/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/local/include" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
