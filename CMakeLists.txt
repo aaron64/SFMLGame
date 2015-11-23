@@ -16,7 +16,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 # Define sources and executable
 set(EXECUTABLE_NAME "SFMLProject")
-add_executable(${EXECUTABLE_NAME} main.cpp src/util/Image.cpp src/util/Image.h src/util/Geom.cpp src/util/Geom.h src/entities/Entity.cpp src/entities/Entity.h src/states/GameState.cpp src/states/GameState.h src/states/Play.cpp src/states/Play.h src/states/Menu.cpp src/states/Menu.h src/states/PlayData.cpp src/states/PlayData.h src/entities/Living.cpp src/entities/Living.h src/entities/Player.cpp src/entities/Player.h src/util/Keys.cpp src/util/Keys.h src/entities/Enemy.cpp src/entities/Enemy.h src/map/Map.cpp src/map/Map.h src/util/Screen.cpp src/util/Screen.h src/util/Cursor.cpp src/util/Cursor.h)
+add_executable(${EXECUTABLE_NAME} main.cpp src/util/Image.cpp src/util/Image.h src/util/Geom.cpp src/util/Geom.h src/entities/Entity.cpp src/entities/Entity.h src/states/GameState.cpp src/states/GameState.h src/states/Play.cpp src/states/Play.h src/states/Menu.cpp src/states/Menu.h src/states/PlayData.cpp src/states/PlayData.h src/entities/Living.cpp src/entities/Living.h src/entities/Player.cpp src/entities/Player.h src/util/Keys.cpp src/util/Keys.h src/entities/Enemy.cpp src/entities/Enemy.h src/map/Map.cpp src/map/Map.h src/util/Screen.cpp src/util/Screen.h src/util/Cursor.cpp src/util/Cursor.h src/map/GridFactory.cpp src/map/GridFactory.h src/map/GridImages.cpp src/map/GridImages.h src/map/Grid.cpp src/map/Grid.h src/util/Math.cpp src/util/Math.h)
 
 
 

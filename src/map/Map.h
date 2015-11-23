@@ -7,6 +7,7 @@
 
 
 #include "../util/Image.h"
+#include "Grid.h"
 
 class Map {
 public:
@@ -15,6 +16,7 @@ public:
     void render(sf::RenderWindow& g);
 private:
     Image* bg;
+    Grid* grid;
 };
 
 

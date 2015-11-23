@@ -13,6 +13,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/entities/Living.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/entities/Player.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/entities/Player.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/Grid.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/Grid.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/GridFactory.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/GridFactory.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/GridImages.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/map/GridImages.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/map/Map.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/map/Map.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/states/GameState.cpp" isTestSource="false" />
@@ -31,6 +37,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/util/Image.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Keys.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Keys.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Math.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/util/Math.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Screen.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Screen.h" isTestSource="false" />
     </content>

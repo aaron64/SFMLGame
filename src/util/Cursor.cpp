@@ -11,10 +11,10 @@ Cursor::Cursor(std::string name) {
 }
 
 int Cursor::getX() {
-    return x;
+    return -x;
 }
 int Cursor::getY() {
-    return y;
+    return -y;
 }
 
 void Cursor::render(sf::RenderWindow& g) {

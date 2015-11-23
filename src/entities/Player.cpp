@@ -7,6 +7,7 @@
 #include "Player.h"
 #include "../util/Keys.h"
 #include "../states/PlayData.h"
+#include "../util/Screen.h"
 
 using namespace std;
 
@@ -30,7 +31,7 @@ void Player::update(PlayData& pd) {
         setVelocity(1);
 }
 void Player::render(PlayData& pd, sf::RenderWindow& g) {
-    float r = atan2(getY() - pd.cursor->getY(), getX() - pd.cursor->getX());
-    image->getSprite().setRotation(r * 180);
+    float r = atan2(pd.cursor->getY() - Screen::SCREEN_HEIGHT/2, pd.cursor->getX() - Screen::SCREEN_WIDTH/2);
+    image->getSprite().setRotation((r * 180)/M_PI);
     image->draw(getX(), getY(), g);
 }
