@@ -13,11 +13,11 @@ using namespace std;
 Play::Play(std::string name, int id) : GameState(name, id) {
     pd = new PlayData();
 
-    Player* p = new Player(100,100,"Player");
+    Player* p = new Player(pd->spawn[0],pd->spawn[1],"Player");
     pd->player = p;
     pd->entityList.push_back(p);
 
-    for(int i = 0; i < 10; i++)
+    for(int i = 0; i < 1; i++)
     {
         float ex = rand() % 640;
         float ey = rand() % 480;

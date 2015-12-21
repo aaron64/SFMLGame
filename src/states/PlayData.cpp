@@ -5,5 +5,10 @@
 #include "PlayData.h"
 PlayData::PlayData() {
     cursor = new Cursor("crosshair");
-    map = new Map();
+    map = new Map(this);
+}
+
+void PlayData::setSpawn(float x, float y) {
+    spawn[0] = x;
+    spawn[1] = y;
 }

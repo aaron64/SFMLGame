@@ -6,11 +6,11 @@
 #include "GridFactory.h"
 #include "GridImages.h"
 
-Grid::Grid(int w, int h) {
+Grid::Grid(PlayData& pd, int w, int h) {
     this->w = w;
     this->h = h;
 
-    tileGrid = GridFactory::getGrid(w,h);
+    tileGrid = GridFactory::getGrid(pd, w,h);
 }
 
 void Grid::render(sf::RenderWindow &g) {

@@ -17,28 +17,33 @@ public:
     virtual void update(PlayData& pd) {}
     virtual void render(PlayData& pd, sf::RenderWindow& g) {}
 
+    void move(float x, float y);
+
+    bool collides(PlayData& pd);
+    bool entityCollsion(PlayData& pd);
+    bool mapCollision(PlayData& pd);
 
     void setName(std::string name);
-
     void setX(float x);
     void setY(float y);
 
-    void move(float x, float y);
 
     std::string getName();
-
     float getX();
     float getY();
-
     int getWidth();
     int getHeight();
 
+    int getId();
 protected:
     Image* image;
 private:
     float mX, mY;
     std::string mName;
     int mW,mH;
+
+    int id;
+    static int idCounter;
 };
 
 

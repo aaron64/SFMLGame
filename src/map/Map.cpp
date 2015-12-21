@@ -5,15 +5,13 @@
 #include <iostream>
 #include "Map.h"
 #include "../util/Screen.h"
-#include "GridFactory.h"
-#include "GridImages.h"
 
-Map::Map()
+Map::Map(PlayData* pd)
 {
     bg = new Image("bg");
     bg->setScale(Screen::SCREEN_WIDTH, Screen::SCREEN_HEIGHT);
 
-    grid = new Grid(50,50);
+    grid = new Grid(*pd, 50,50);
 }
 
 void Map::update() {

@@ -15,7 +15,7 @@ Enemy::Enemy(float x, float y, std::string name) : Living(x,y,name) {
 }
 
 void Enemy::update(PlayData& pd) {
-    move(mXd * getVelocity(), mYd * getVelocity());
+    //move(mXd * getVelocity(), mYd * getVelocity());
 }
 
 void Enemy::render(PlayData& pd, sf::RenderWindow& g) {

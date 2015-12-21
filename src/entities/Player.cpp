@@ -17,14 +17,25 @@ Player::Player(float x, float y, std::string name) : Living(x,y,name) {
 }
 
 void Player::update(PlayData& pd) {
+    // position last frame
+    float oldX = getX();
+    float oldY = getY();
+
     if(Keys::W)
         move(0,-1 * getVelocity());
     if(Keys::S)
         move(0,1 * getVelocity());
+    if(collides(pd))
+        setY(oldY);
+
+
     if(Keys::A)
         move(-1 * getVelocity(), 0);
     if(Keys::D)
         move(1 * getVelocity(), 0);
+    if(collides(pd))
+        setX(oldX);
+
     if(Keys::SHIFT)
         setVelocity(2);
     else

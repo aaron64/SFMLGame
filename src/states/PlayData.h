@@ -8,8 +8,8 @@
 
 #include <vector>
 #include "../entities/Entity.h"
-#include "../map/Map.h"
 #include "../entities/Player.h"
+#include "../map/Map.h"
 #include "../util/Cursor.h"
 
 // This class provides data to the "Play" state, map, entities, time, etc
@@ -20,6 +20,9 @@ public:
     Cursor* cursor;
     Map* map;
     std::vector<Entity*> entityList;
+
+    float spawn[2];
+    void setSpawn(float x, float y);
 };
 
 

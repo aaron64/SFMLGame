@@ -3,13 +3,12 @@
 //
 
 #include <iostream>
-#include <stdlib.h>
 #include <cmath>
 #include "GridFactory.h"
 #include "../util/Geom.h"
 #include "../util/Math.h"
 
-int** GridFactory::getGrid(int w,int h) {
+int** GridFactory::getGrid(PlayData& pd, int w,int h) {
     // Create grid result
     int** result = new int*[w];
 
@@ -84,6 +83,9 @@ int** GridFactory::getGrid(int w,int h) {
         }
         std::cout << std::endl;
     }
+
+    // set spawn coords
+    pd.setSpawn(cxs[0] * 32,cys[0] * 32);
 
     return result;
 }

@@ -6,9 +6,11 @@
 #define SFMLPROJECT_GRIDFACTORY_H
 
 
+#include "../states/PlayData.h"
+
 class GridFactory {
 public:
-    static int** getGrid(int w, int h);
+    static int** getGrid(PlayData& pd, int w, int h);
 };
 
 

@@ -9,9 +9,10 @@
 #include "../util/Image.h"
 #include "Grid.h"
 
+class PlayData;
 class Map {
 public:
-    Map();
+    Map(PlayData* pd);
     void update();
     void render(sf::RenderWindow& g);
 private:

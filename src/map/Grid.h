@@ -5,12 +5,12 @@
 #ifndef SFMLPROJECT_GRID_H
 #define SFMLPROJECT_GRID_H
 
-
 #include <SFML/Graphics/RenderWindow.hpp>
 
+class PlayData;
 class Grid {
 public:
-    Grid(int w, int h);
+    Grid(PlayData& pd, int w, int h);
 
     void render(sf::RenderWindow& g);
 private:
