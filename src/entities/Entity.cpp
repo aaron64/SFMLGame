@@ -47,7 +47,7 @@ bool Entity::entityCollsion(PlayData& pd) {
     return false;
 }
 bool Entity::mapCollision(PlayData &pd) {
-    return false;
+    return pd.map->hasCollision(getCenterX(), getCenterY());
 }
 
 // Setters
@@ -75,6 +75,15 @@ float Entity::getY()
     return mY;
 
 }
+float Entity::getCenterX()
+{
+    return mX + mW/2;
+}
+float Entity::getCenterY()
+{
+    return mY + mH/2;
+}
+
 std::string Entity::getName()
 {
     return mName;
@@ -87,9 +96,9 @@ int Entity::getId()
 
 int Entity::getWidth()
 {
-    return mX;
+    return mW;
 }
 int Entity::getHeight()
 {
-    return mY;
+    return mH;
 }

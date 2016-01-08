@@ -15,6 +15,8 @@ public:
     Map(PlayData* pd);
     void update();
     void render(sf::RenderWindow& g);
+
+    bool hasCollision(float x, float y);
 private:
     Image* bg;
     Grid* grid;

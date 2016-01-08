@@ -29,8 +29,12 @@ public:
 
 
     std::string getName();
+
     float getX();
     float getY();
+    float getCenterX();
+    float getCenterY();
+
     int getWidth();
     int getHeight();
 

@@ -10,7 +10,7 @@
 
 class GridImages {
 public:
-    static Image BLOCK;
+    static Image BLOCK, GROUND;
 };
 
 

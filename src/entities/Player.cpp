@@ -37,9 +37,9 @@ void Player::update(PlayData& pd) {
         setX(oldX);
 
     if(Keys::SHIFT)
-        setVelocity(2);
+        setVelocity(5);
     else
-        setVelocity(1);
+        setVelocity(2);
 }
 void Player::render(PlayData& pd, sf::RenderWindow& g) {
     float r = atan2(pd.cursor->getY() - Screen::SCREEN_HEIGHT/2, pd.cursor->getX() - Screen::SCREEN_WIDTH/2);

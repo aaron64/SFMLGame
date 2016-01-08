@@ -4,3 +4,4 @@
 
 #include "GridImages.h"
 Image GridImages::BLOCK("tiles/block");
+Image GridImages::GROUND("tiles/ground");

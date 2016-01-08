@@ -13,8 +13,15 @@ public:
     Grid(PlayData& pd, int w, int h);
 
     void render(sf::RenderWindow& g);
+
+    int getSize();
+    int getWidth();
+    int getHeight();
+
+    int getTile(int x, int y);
 private:
     int w,h;
+    int size;
     int** tileGrid;
 };
 
